@@ -1,0 +1,12 @@
+@import 'scss/main.scss';
+
+.UserProfileBasic {
+  width: 100%;
+}
+
+.SubmitButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@import './UserProfileBasic.media.scss';

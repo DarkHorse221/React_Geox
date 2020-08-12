@@ -1,0 +1,69 @@
+@import 'scss/main.scss';
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #111111;
+  color: white;
+  font-family: 'Roboto';
+
+  .Footer__FirstRow {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 90px auto;
+  }
+
+  .Footer__BoldText16 {
+    margin-bottom: 15px;
+  }
+
+  .Footer__LightText {
+    line-height: 2;
+  }
+
+  .Footer__Address {
+    margin-top: 40px;
+  }
+
+  .Footer__SignUpContainer {
+    background: #ffffff0d;
+    overflow: hidden;
+    border-radius: 6px;
+    width: 430px;
+    margin-top: 30px;
+
+    :global {
+      .MuiButtonBase-root {
+        background: #1f365c;
+        color: white;
+        height: 60px;
+        width: 130px;
+      }
+
+      .MuiOutlinedInput-adornedEnd {
+        padding-right: 0;
+      }
+    }
+
+    label {
+      color: #ffffff40 !important;
+    }
+  }
+
+  .Footer__FollowUs {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+
+    .Footer__FollowUsText {
+      margin-right: 15px;
+    }
+
+    img {
+      margin-right: 11px;
+    }
+  }
+}
+
+@import './Footer.media.scss';

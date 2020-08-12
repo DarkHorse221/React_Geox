@@ -1,0 +1,48 @@
+@import 'scss/main.scss';
+
+.SelectAvatarModal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .SelectAvatarModal__Body {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    border-radius: 6px;
+    outline: none;
+
+    .CloseButton {
+      position: absolute;
+      right: 27px;
+      top: 27px;
+    }
+
+    .SelectAvatarContent {
+      margin-top: 53px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 535px;
+      width: 100%;
+
+      .SelectAvatarContent__Description {
+        margin-top: 10px;
+        margin-bottom: 56px;
+      }
+
+      .SelectAvatarContent__Avatars {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@import './SelectAvatarModal.media.scss';

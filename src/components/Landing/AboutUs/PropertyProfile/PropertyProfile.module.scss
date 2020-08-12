@@ -1,0 +1,81 @@
+@import 'scss/main.scss';
+
+.PropertyProfile {
+  display: flex;
+  justify-content: center;
+  color: #111111;
+  font-family: 'Roboto';
+
+  .PropertyProfile__Image {
+    max-width: 590px;
+    min-height: 590px;
+    margin-right: 82px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      background-repeat: 10px;
+    }
+  }
+
+  .PropertyProfile__Data {
+    .PropertyProfile__Quote {
+      text-align: right;
+      margin-top: 10px;
+    }
+
+    .PropertyProfile__Header {
+      margin-top: 26px;
+    }
+
+    .PropertyProfile__Address {
+      margin-top: 29px;
+    }
+
+    .PropertyProfile__Characteristics {
+      display: flex;
+      margin-top: 40px;
+      min-height: 240px;
+
+      .PropertyProfile__Summary {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 37px 40px;
+        background-image: url('../../../../assets/images/PropertyProfileSummaryBackground.svg');
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        line-height: 1.5;
+      }
+
+      .PropertyProfile__CharacteristicsData {
+        margin-top: 18px;
+
+        & > div {
+          display: flex;
+          justify-content: space-around;
+          min-height: 50px;
+          align-items: center;
+          min-width: 400px;
+
+          &:nth-child(odd) {
+            background-color: #eef1f4;
+          }
+        }
+
+        .PropertyProfile__CharacteristicsDataName {
+          margin-left: 55px;
+          margin-right: 20px;
+        }
+
+        .PropertyProfile__CharacteristicsDataValue {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@import './PropertyProfile.media.scss';

@@ -1,0 +1,22 @@
+@import 'scss/main.scss';
+
+.Link {
+  text-decoration: none;
+  color: #111111;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+// Types
+.UNDERLINE_AND_BLUE {
+  text-decoration: underline;
+  color: $color-blue;
+}
+
+.WHITE {
+  text-decoration: none;
+  color: $color-white;
+}
+
+@import './Link.media.scss';

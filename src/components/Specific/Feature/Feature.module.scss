@@ -1,0 +1,28 @@
+@import 'scss/main.scss';
+
+.Feature {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  color: $color-white !important;
+  margin-left: 40px;
+  margin-right: 40px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .FeatureTitle {
+    margin-top: 10px;
+  }
+
+  .FeatureDescription {
+    margin-top: 10px;
+  }
+}
+
+@import './Feature.media.scss';

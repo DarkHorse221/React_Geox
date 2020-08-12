@@ -1,0 +1,15 @@
+@import 'scss/main.scss';
+
+.GeoXTextArea {
+  width: 100%;
+  background-color: #eef1f4;
+  border-radius: 6px;
+
+  :global {
+    .MuiOutlinedInput-notchedOutline {
+      border: 1px solid $color-input-border;
+    }
+  }
+}
+
+@import './GeoXTextArea.media.scss';

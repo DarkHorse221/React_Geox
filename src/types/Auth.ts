@@ -1,0 +1,36 @@
+export interface AuthUser {
+  active: boolean;
+  active_credits: number;
+  address_optional?: string;
+  agree_to_terms: boolean;
+  api_key?: string;
+  api_secret?: string;
+  avatar_name?: string;
+  billing_address: string;
+  city: string;
+  company?: string;
+  country: string;
+  curr_data_plan: string;
+  customer_id: string;
+  data_plan_history: [];
+  date_of_change?: Date;
+  date_of_purchase?: Date;
+  email: string;
+  first_name: string;
+  id: string;
+  image_provider?: string;
+  industry?: string;
+  last_name: string;
+  order_history: [];
+  organization: string;
+  organization_code?: number;
+  pay_period?: string;
+  payment_method?: string;
+  prev_data_plan?: string;
+  prev_payment_method?: Date;
+  renewal_date?: Date;
+  state: string;
+  willing_updates?: boolean;
+  work_phone?: string;
+  zip: string;
+}

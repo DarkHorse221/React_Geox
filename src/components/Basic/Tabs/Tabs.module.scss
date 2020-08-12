@@ -1,0 +1,50 @@
+@import 'scss/main.scss';
+
+.Tabs {
+  color: #1f365c;
+  margin-bottom: 30px;
+  width: 100%;
+
+  :global {
+    .MuiTabs-indicator {
+      background-color: #1f365c;
+    }
+
+    .MuiTabs-flexContainer {
+      border-bottom: 2px solid #abafba;
+    }
+  }
+}
+
+.Centered {
+  width: unset;
+  display: flex;
+
+  :global {
+    .MuiTabs-flexContainer {
+      border-bottom: unset;
+    }
+
+    .MuiButtonBase-root {
+      border-bottom: 2px solid #858da1;
+    }
+  }
+}
+
+.SwipeableViews {
+  width: 100%;
+  margin-bottom: 140px;
+  min-height: calc(100vh - 780px);
+
+  :global {
+    .react-swipeable-view-container div[aria-hidden='false'] {
+      height: 100%;
+    }
+
+    .react-swipeable-view-container div[aria-hidden='true'] {
+      height: 0;
+    }
+  }
+}
+
+@import './Tabs.media.scss';

@@ -1,0 +1,32 @@
+@import 'scss/main.scss';
+
+.Submit {
+  margin-top: 20px !important;
+  background-color: #1f365c !important;
+  color: white !important;
+  height: 56px;
+  font-family: 'Roboto' !important;
+  font-size: 16px !important;
+  border-radius: 6px !important;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  .LoadingIndicator {
+    width: 30px !important;
+    height: 30px !important;
+    color: $color-white;
+    margin-left: 1rem;
+  }
+}
+
+// Types
+.FULL_WIDTH {
+  width: 100%;
+}
+
+.ROUND_CORNER {
+  border-radius: 23px !important;
+  height: 46px;
+}
+
+@import './SubmitButton.media.scss';

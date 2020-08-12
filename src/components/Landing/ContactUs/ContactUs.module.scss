@@ -1,0 +1,72 @@
+@import 'scss/main.scss';
+
+.ContactUs {
+  background-image: url('../../../assets/images/ContactUsBackground.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: 'Roboto';
+
+  .ContactUs__InfoContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    :global {
+      .SectionName {
+        &::after {
+          background-color: #fff;
+        }
+      }
+    }
+
+    .ContactUs__Info {
+      max-width: 424px;
+
+      .ContactUs__Info_Title {
+        margin-top: 24px;
+      }
+
+      .ContactUs__Info_Description {
+        margin-top: 40px;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .ContactUs__FormContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    .ContactUs__Form {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 50px;
+      max-width: 600px;
+
+      .ContactUs__FormHeader {
+        margin-top: 24px;
+        margin-bottom: 40px;
+      }
+
+      .ContactUs__Form_FirstName {
+        width: calc(50% - 10px);
+        margin-right: 20px;
+      }
+
+      .ContactUs__Form_LastName {
+        width: calc(50% - 10px);
+      }
+    }
+  }
+}
+
+@import './ContactUs.media.scss';

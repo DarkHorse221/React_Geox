@@ -1,0 +1,53 @@
+@import 'scss/main.scss';
+
+.PrivateNavbar {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: $color-blue;
+  margin-bottom: 40px;
+
+  .PrivateNavbarContainer {
+    position: relative;
+    display: flex;
+    height: 85px;
+    align-items: center;
+  }
+
+  .PrivateNavbar_Logo {
+    height: 100%;
+
+    img {
+      box-shadow: 0px 5px 20px #1f365c21;
+      border-radius: 0px 0px 8px 8px;
+    }
+  }
+
+  .NavbarLinks {
+    margin-left: 80px;
+
+    a {
+      margin-right: 40px;
+    }
+  }
+
+  .ProfileMenu {
+    margin-left: auto;
+
+    .ProfileMenu_Button {
+      border: 1px solid $color-white;
+      border-radius: 6px;
+      margin-left: auto;
+      color: $color-white;
+    }
+  }
+}
+
+// .PopoverClass {
+//   :global {
+//     .MuiMenu-paper {
+//       margin-top: 50px;
+//     }
+//   }
+// }
+
+@import './PrivateNavbar.media.scss';

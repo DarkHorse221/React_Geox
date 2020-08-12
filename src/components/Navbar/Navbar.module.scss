@@ -1,0 +1,79 @@
+@import 'scss/main.scss';
+
+.NavbarContainer {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 76px;
+  font-family: 'Roboto';
+  color: white;
+}
+
+.NavbarColorSecondary {
+  --navbar-primary-color: var(--navbar-secondary-color);
+
+  img {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(214deg)
+      brightness(200%) contrast(102%) !important;
+  }
+}
+
+.Navbar {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  z-index: 999;
+  height: 100%;
+
+  .NavbarLogo {
+    max-width: 100%;
+    margin-right: 3rem;
+  }
+
+  .NavbarMenu {
+    ul {
+      display: flex;
+
+      li {
+        list-style-type: none;
+      }
+
+      a {
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: center;
+        margin-right: 4.5rem;
+        position: relative;
+        text-decoration: none;
+        color: white;
+
+        :hover {
+          color: rgb(235, 231, 231);
+        }
+      }
+    }
+  }
+
+  .LoginButtonContainer {
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: 35px;
+
+    :global {
+      .MuiButton-label {
+        color: #ffffff !important;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.NavbarMenuMobile {
+  display: none;
+}
+
+@import './Navbar.media.scss';

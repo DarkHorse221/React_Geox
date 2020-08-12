@@ -1,0 +1,10 @@
+@import 'scss/main.scss';
+
+.PackageTabs {
+  .tabContent {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@import './PackageTabs.media.scss';

@@ -1,0 +1,41 @@
+@import 'scss/main.scss';
+
+.TransactionHistory {
+  background: #ffffff;
+  border: 2px solid #abafba33;
+  border-radius: 10px;
+
+  .TransactionHistory__Header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .TableBody {
+    max-height: 800px;
+
+    .TRANSACTION_Container {
+      display: flex;
+
+      .dummy {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background-color: #abafba;
+        margin-right: 30px;
+      }
+
+      .TRANSACTION__Body {
+        display: flex;
+        flex-direction: column;
+
+        .Table_TransactionTime {
+          margin-top: 10px;
+          margin-bottom: 9px;
+        }
+      }
+    }
+  }
+}
+
+@import './TransactionHistory.media.scss';

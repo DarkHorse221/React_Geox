@@ -1,0 +1,56 @@
+@import 'scss/main.scss';
+
+.Login {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $color-blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .LoginForm {
+    .LoginForm__ForgetPassword {
+      width: 100%;
+      text-align: right;
+      margin-top: 18px;
+    }
+  }
+
+  .OrLoginWith {
+    text-align: center;
+  }
+
+  .LoginWithButtonsContainer {
+    margin-top: 50px;
+
+    .LoginWithButton {
+      width: 100%;
+      height: $button-height;
+      border-radius: 6px;
+
+      img {
+        margin-right: 15px;
+      }
+    }
+
+    .LoginWithButtonGoogle {
+      margin-bottom: 20px;
+      border: 1px solid #abafba;
+    }
+
+    .LoginWithButtonLinkedIn {
+      background-color: $color-linkedIn;
+    }
+  }
+
+  .CreateNewAccountContainer {
+    margin-top: 40px;
+    text-align: center;
+
+    .CreateAccountLink {
+      margin-left: 5px;
+    }
+  }
+}
+
+@import './Login.media.scss';

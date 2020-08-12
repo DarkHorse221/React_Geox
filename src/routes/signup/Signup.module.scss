@@ -1,0 +1,43 @@
+@import 'scss/main.scss';
+
+.Signup {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $color-blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .TwoFieldsContainer {
+    display: flex;
+
+    .FirstField {
+      margin-right: 1rem;
+    }
+  }
+
+  .TermsAndConditionsCheckBox {
+    display: flex;
+    align-items: flex-start;
+
+    .CheckBox {
+      padding-top: 0;
+      padding-left: 0;
+    }
+  }
+
+  .TermsAndConditionError {
+    margin-top: 1rem;
+  }
+
+  .AlreadyHaveAccountContainer {
+    margin-top: 40px;
+    text-align: center;
+
+    .LoginLink {
+      margin-left: 5px;
+    }
+  }
+}
+
+@import './Signup.media.scss';

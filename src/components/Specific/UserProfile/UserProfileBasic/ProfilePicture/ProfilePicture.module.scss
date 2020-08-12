@@ -1,0 +1,24 @@
+@import 'scss/main.scss';
+
+.ProfilePicture {
+  margin-bottom: 20px;
+
+  .ProfilePictureBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .ProfilePicture__Image {
+      height: 197px;
+      width: 197px;
+      border-radius: 50%;
+    }
+
+    .UploadButton {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+@import './ProfilePicture.media.scss';

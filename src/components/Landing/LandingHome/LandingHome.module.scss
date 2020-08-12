@@ -1,0 +1,62 @@
+@import 'scss/main.scss';
+
+.LandingHome {
+  width: 100%;
+  min-width: 100%;
+  height: 100vh;
+  background-image: url('../../../assets/images/LandingHomeBackground.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  .BlueCircle {
+    background-color: rgba(31, 54, 92, 0.8);
+    width: 100%;
+    height: 100%;
+    max-width: 674px;
+    max-height: 674px;
+    border-radius: 50%;
+    position: absolute;
+    right: 300px;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .BlueCircleContent {
+    // variables
+    $margin: 90px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .Title {
+      margin-top: $margin;
+    }
+
+    .Description {
+      max-width: 280px;
+    }
+
+    .WatchVideoContainer {
+      margin-bottom: $margin;
+    }
+  }
+
+  .FollowUsContainer {
+    position: absolute;
+    right: 36px;
+    top: 50%;
+    transform: rotate(270deg) translateX(50%);
+    transform-origin: right;
+
+    button {
+      color: #ffffff;
+    }
+  }
+}
+
+@import './LandingHome.media.scss';

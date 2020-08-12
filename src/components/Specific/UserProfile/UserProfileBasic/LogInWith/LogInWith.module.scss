@@ -1,0 +1,32 @@
+@import 'scss/main.scss';
+
+.LogInWith {
+  margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+
+  .LogInWith__Row {
+    display: flex;
+    justify-content: space-between;
+
+    .LogInWith__Button {
+      width: 170px;
+    }
+  }
+
+  .LogInWith__Name {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 20px;
+    }
+  }
+
+  .Disconnect {
+    background-color: #eef1f4 !important;
+    color: #858da1 !important;
+  }
+}
+
+@import './LogInWith.media.scss';

@@ -1,0 +1,178 @@
+@import 'scss/main.scss';
+
+.Section1 {
+  background-image: url('../../../assets/images/AboutUs_BackgroundImage.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-height: 673px;
+  margin-top: -40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .Section1__Content {
+    max-width: 760px;
+    text-align: center;
+
+    .Section1__Content_Header {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.Section2 {
+  display: flex;
+  margin-bottom: 100px;
+  margin-top: 100px;
+
+  .Section2_Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .Section2_Content_Header {
+      margin-bottom: 30px;
+    }
+  }
+
+  img {
+    max-width: 840px;
+  }
+}
+
+.Section3 {
+  display: flex;
+  margin-bottom: 100px;
+  justify-content: center;
+
+  .Section3__Body {
+    display: flex;
+    max-width: 1230px;
+    align-items: center;
+  }
+
+  .Section3__Content {
+    display: flex;
+
+    .Section3__Content_Text {
+      background-color: $color-blue;
+      padding: 50px 40px;
+      margin-left: 20px;
+      margin-right: 20px;
+
+      .Section3__Content_TextDescription {
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .Section3__Content_Images {
+      display: flex;
+      flex-direction: column;
+
+      .FirstImage {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.Section4 {
+  background-color: $color-blue;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .Section4__Title {
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .Section4__Description {
+    margin-top: 20px;
+    margin-bottom: 90px;
+    max-width: 875px;
+    text-align: center;
+  }
+
+  .Section4__TimelineContainer {
+    width: 100%;
+
+    :global {
+      .vertical-timeline-element-content {
+        background-color: #004c81 !important;
+        color: $color-white;
+      }
+
+      .vertical-timeline-element-icon {
+        width: 20px !important;
+        height: 20px !important;
+        margin-left: -10px !important;
+        background-color: white !important;
+        box-shadow: none !important;
+        top: 18px !important;
+      }
+
+      .vertical-timeline-element-date {
+        color: $color-white;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.Section5 {
+  display: flex;
+  max-width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 170px;
+  padding-bottom: 170px;
+
+  .LandingSectionSummary {
+    max-width: 450px;
+    margin-right: 100px;
+  }
+
+  .Team {
+    display: flex;
+    flex-wrap: wrap;
+
+    .Row {
+      display: flex;
+      width: 100%;
+      max-width: 700px;
+      margin-bottom: 55px;
+    }
+
+    .Team__Member {
+      display: flex;
+      min-width: 400px;
+
+      img {
+        width: 80px;
+        height: 80px;
+      }
+
+      .Team__MemberDetails {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+
+        .Team__MemberDetails_Name {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+@import './AboutUs.media.scss';

@@ -1,0 +1,65 @@
+@import 'scss/main.scss';
+
+/* Global styles */
+.KnowMoreButton {
+  margin-top: 63px;
+
+  button {
+    color: white;
+    display: flex;
+    padding-left: 0;
+
+    img {
+      margin-left: 6px;
+    }
+  }
+}
+
+.KnowMoreButtonBlack {
+  color: #111111;
+  margin-bottom: 40px;
+  margin-top: 0;
+
+  button {
+    color: #111111;
+  }
+
+  img {
+    filter: invert(0%) sepia(3%) saturate(8%) hue-rotate(329deg) brightness(10%)
+      contrast(100%);
+  }
+}
+
+.SectionName {
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 35px;
+    height: 2px;
+    text-align: center;
+    background-color: #111111;
+    position: absolute;
+    bottom: -8px;
+    left: 2px;
+  }
+}
+
+.input-row {
+  display: flex;
+
+  & > div:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+.btnFloatRightContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.MuiInputLabel-outlined {
+  color: $color-black-100 !important;
+}
+
+@import './App.media.scss';

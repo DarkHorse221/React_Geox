@@ -1,0 +1,9 @@
+@import 'scss/main.scss';
+
+.ActiveLink {
+  a {
+    color: var(--primary-color) !important;
+  }
+}
+
+@import './ScrollSpyMenu.media.scss';

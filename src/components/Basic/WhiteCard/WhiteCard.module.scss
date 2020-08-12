@@ -1,0 +1,25 @@
+@import 'scss/main.scss';
+
+.WhiteCard {
+  max-width: 535px;
+  background-color: $color-white;
+  border-radius: 10px;
+  padding: 75px 40px 40px 40px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  .WhiteCardHeaderType1 {
+    margin-bottom: 40px;
+  }
+
+  .WhiteCardHeaderType2 {
+    margin-bottom: 40px;
+  }
+}
+
+.Type2 {
+  max-width: 1100px;
+  padding-top: 43px;
+}
+
+@import './WhiteCard.media.scss';

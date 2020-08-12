@@ -1,0 +1,50 @@
+@import 'scss/main.scss';
+
+.Drawer {
+  :global {
+    .drawer-handle {
+      display: none;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: var(--color-black);
+      position: relative;
+      margin: 1rem 0;
+      display: block;
+
+      :hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  &__CloseButton {
+    position: absolute;
+    right: 1.3rem;
+    top: 1.3rem;
+    border: none;
+    box-shadow: none;
+    color: rgb(235, 77, 75);
+  }
+
+  &__CloseButtonIcon {
+    font-size: 1.5rem;
+  }
+
+  &__OpenButton {
+    display: inline-block;
+  }
+}
+
+.openDrawerBtn {
+  font-size: 1.5rem;
+}
+
+@import './Drawer.media.scss';

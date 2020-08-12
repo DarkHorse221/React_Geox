@@ -1,0 +1,15 @@
+@import 'scss/main.scss';
+
+.PersonalDetails {
+  margin-bottom: 20px;
+}
+
+.Row {
+  display: flex;
+
+  & > div:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+@import './PersonalDetails.media.scss';
